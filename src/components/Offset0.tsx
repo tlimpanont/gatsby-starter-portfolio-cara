@@ -12,7 +12,7 @@ export const Offset0: FC<{ parallax: IParallax }> = ({ parallax }) => (
     alignItems="center"
   >
     <img
-      src="static/la-casa-blanco-agency-logo.png"
+      src="../../static/la-casa-blanco-agency-logo.png"
       alt="la-casa-blanco-agency-logo"
       width="500"
     />

@@ -101,7 +101,7 @@ export const DecorationParallaxLayers: FC<{ parallax: IParallax }> = () => (
       }}
     >
       <img
-        src="static/la-casa-blanco-agency-logo.png"
+        src="../../../static/la-casa-blanco-agency-logo.png"
         alt="la-casa-blanco-agency-logo"
         width="300"
       />

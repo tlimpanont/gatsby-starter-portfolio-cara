@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'goodchild';
-  src: url('../../public/static/fonts/Goodchild.woff2') format('woff2'),
-  url('../../public/static/fonts/Goodchild.woff2') format('woff');
+  src: url('./fonts/Goodchild.woff2') format('woff2'),
+  url('./fonts/Goodchild.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'allura';
-  src: url('../../public/static/fonts/allura-regular-webfont.woff2') format('woff2'),
-  url('../../public/static/fonts/allura-regular-webfont.woff') format('woff');
+  src: url('./fonts/allura-regular-webfont.woff2') format('woff2'),
+  url('./fonts/allura-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
