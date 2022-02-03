@@ -25,6 +25,7 @@
     "plugin:jest/style"
   ],
   "rules": {
+    "jsx-a11y/alt-text": "off",
     "jest/prefer-strict-equal": "error",
     "jest/prefer-to-have-length": "warn",
     "prettier/prettier": "error",
@@ -53,12 +54,7 @@
         "jsx": "never"
       }
     ],
-    "react/function-component-definition": [
-      2,
-      {
-        "namedComponents": "function-declaration"
-      }
-    ]
+    "react/function-component-definition": "off"
   },
   "overrides": [
     {
@@ -89,14 +85,6 @@
               "**/*.test.tsx",
               "**/*.spec.tsx"
             ]
-          }
-        ],
-        "quotes": "off",
-        "@typescript-eslint/quotes": [
-          2,
-          "backtick",
-          {
-            "avoidEscape": true
           }
         ],
         "@typescript-eslint/no-unused-vars": [2, { "argsIgnorePattern": "^_" }]

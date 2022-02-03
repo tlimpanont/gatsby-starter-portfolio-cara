@@ -1,16 +1,20 @@
 import React from 'react';
 
-import Title from '@/components/Title';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import './index.css';
 
-export default function Home() {
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import { defaultTheme } from '@/themes/defaultTheme';
+import { App } from '@/components/App';
+
+export default function Index() {
   return (
-    <main>
-      <Title>Hello TypeScript!</Title>
-      <p>A TypeScript starter for Gatsby. Great for advanced users.</p>
-      <p>
-        Follow me on Twitter (
-        <a href="https://twitter.com/jpedroschmitz">@jpedroschmitz</a>)
-      </p>
-    </main>
+    <ThemeProvider theme={defaultTheme}>
+      <CssBaseline />
+      <App />
+    </ThemeProvider>
   );
 }
