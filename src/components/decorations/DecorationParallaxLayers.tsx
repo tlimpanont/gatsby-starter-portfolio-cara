@@ -29,7 +29,7 @@ export const DecorationParallaxLayers: FC<{ parallax: IParallax }> = () => (
       speed={-0.3}
       style={{
         display: `flex`,
-        alignItems: `center`,
+        alignItems: `start`,
         justifyContent: `center`,
         pointerEvents: `none`,
       }}
@@ -37,7 +37,7 @@ export const DecorationParallaxLayers: FC<{ parallax: IParallax }> = () => (
       <img
         alt="Money Flat Icon"
         src="https://upload.wikimedia.org/wikipedia/commons/8/84/Money_Flat_Icon.svg"
-        style={{ width: `50%` }}
+        style={{ width: `35%` }}
       />
     </ParallaxLayer>
 
