@@ -2,7 +2,6 @@ import React, { FC, useState } from 'react';
 import { DecorationParallaxLayers } from '@/components/decorations/DecorationParallaxLayers';
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { Offset0 } from '@/components/Offset0';
-import { Offset1 } from '@/components/Offset1';
 import { Offset2 } from '@/components/Offset2';
 
 export const App: FC = () => {
@@ -10,6 +9,7 @@ export const App: FC = () => {
 
   return (
     <Parallax
+      config={{}}
       ref={(_ref) => {
         setParallax(_ref);
       }}
@@ -32,10 +32,19 @@ export const App: FC = () => {
           justifyContent: `center`,
         }}
       >
-        <Offset1 parallax={parallax} />
+        {/* <Offset1 parallax={parallax} /> */}
       </ParallaxLayer>
 
-      <ParallaxLayer offset={2} speed={-0}>
+      <ParallaxLayer
+        offset={2}
+        speed={-0}
+        style={{
+          display: `flex`,
+          flexDirection: 'column',
+          alignItems: `center`,
+          justifyContent: `center`,
+        }}
+      >
         <Offset2 parallax={parallax} />
       </ParallaxLayer>
     </Parallax>

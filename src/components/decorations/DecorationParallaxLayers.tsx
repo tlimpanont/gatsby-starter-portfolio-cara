@@ -24,10 +24,20 @@ export const DecorationParallaxLayers: FC<{ parallax: IParallax }> = () => (
       }}
     />
 
-    <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: `none` }}>
+    <ParallaxLayer
+      offset={1.8}
+      speed={-0.3}
+      style={{
+        display: `flex`,
+        alignItems: `center`,
+        justifyContent: `center`,
+        pointerEvents: `none`,
+      }}
+    >
       <img
+        alt="Money Flat Icon"
         src="https://upload.wikimedia.org/wikipedia/commons/8/84/Money_Flat_Icon.svg"
-        style={{ width: `20%`, marginLeft: `60%` }}
+        style={{ width: `50%` }}
       />
     </ParallaxLayer>
 
@@ -97,13 +107,13 @@ export const DecorationParallaxLayers: FC<{ parallax: IParallax }> = () => (
         alignItems: `center`,
         justifyContent: `center`,
         pointerEvents: `none`,
-        marginTop: -150,
+        marginTop: -100,
       }}
     >
       <img
-        src="../../../static/la-casa-blanco-agency-logo.png"
+        src="la-casa-blanco-agency-logo.png"
         alt="la-casa-blanco-agency-logo"
-        width="300"
+        width="200"
       />
     </ParallaxLayer>
   </>

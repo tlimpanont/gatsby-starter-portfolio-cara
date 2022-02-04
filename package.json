@@ -40,6 +40,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-helmet": "6.1.0",
+    "react-jotform-embed": "1.1.2",
     "tsconfig-paths-webpack-plugin": "3.5.2"
   },
   "devDependencies": {
